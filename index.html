@@ -15,16 +15,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="theme-toggle">🌙</button>
-
   <header>
-    <img src="foto.jpg" alt="Daniel López" class="avatar" />
+    <div class="header-content">
+      <div>
+        <h1>Hola, soy Daniel</h1>
+        <p>Soy desarrollador full-stack junior con experiencia en aplicaciones de escritorio, móviles y web.</p>
+      </div>
+      <img src="foto.jpg" alt="Daniel López" class="avatar" />
+    </div>
   </header>
 
   <section>
     <h2>Sobre mí</h2>
     <p>
-      Soy desarrollador full-stack junior con experiencia en aplicaciones de escritorio, móviles y web.
       Me interesa la accesibilidad, el rendimiento y la experiencia de usuario.
     </p>
   </section>
@@ -38,16 +41,17 @@
       <li>SQLite</li>
       <li>Kotlin</li>
       <li>Angular</li>
+      <li>Python</li>
       <li>HTML & CSS</li>
       <li>Java</li>
     </ul>
   </section>
 
   <section>
-    <h2>Proyectos</h2>
+    <h2>Proyectos realizados</h2>
 
     <div class="project">
-      <h3>PACBAL App</h3>
+      <h3>Aplicación educativa para Generalitat</h3>
       <p>Aplicación educativa en ElectronJS + NodeJS + Vite + SQLite para evaluar habilidades lectoras.</p>
       <a href="https://github.com/daniellopezmateos22/pacbal-app" target="_blank">
         <i class="fab fa-github"></i> Ver en GitHub
@@ -55,7 +59,7 @@
     </div>
 
     <div class="project">
-      <h3>GartenConnect</h3>
+      <h3>Aplicación para gimnasios</h3>
       <p>Aplicación hecha con Kotlin para Android.</p>
       <a href="https://github.com/daniellopezmateos22/GartenConnect" target="_blank">
         <i class="fab fa-github"></i> Ver en GitHub
@@ -63,7 +67,7 @@
     </div>
 
     <div class="project">
-      <h3>Series</h3>
+      <h3>Aplicación para buscar series</h3>
       <p>Aplicación hecha con Angular haciendo un listado de series.</p>
       <a href="https://github.com/daniellopezmateos22/dani-series" target="_blank">
         <i class="fab fa-github"></i> Ver en GitHub
@@ -83,14 +87,5 @@
   <footer>
     <p>Contacto: <a href="mailto:daniellopezmateos22@gmail.com">daniellopezmateos22@gmail.com</a></p>
   </footer>
-
-  <script>
-    // Tema claro/oscuro manual
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-    });
-  </script>
 </body>
 </html>
