@@ -11,13 +11,14 @@
   <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Enlace al archivo CSS -->
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="theme-toggle">🌙</button>
+
   <header>
-    <h1>Hola, soy Daniel 👋</h1>
-    <p>Soy desarrollador y este es mi portfolio.</p>
+    <img src="foto.jpg" alt="Daniel López" class="avatar" />
   </header>
 
   <section>
@@ -26,6 +27,20 @@
       Soy desarrollador full-stack junior con experiencia en aplicaciones de escritorio, móviles y web.
       Me interesa la accesibilidad, el rendimiento y la experiencia de usuario.
     </p>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ul class="skills">
+      <li>JavaScript</li>
+      <li>Node.js</li>
+      <li>Electron</li>
+      <li>SQLite</li>
+      <li>Kotlin</li>
+      <li>Angular</li>
+      <li>HTML & CSS</li>
+      <li>Java</li>
+    </ul>
   </section>
 
   <section>
@@ -56,8 +71,26 @@
     </div>
   </section>
 
+  <section>
+    <h2>Redes y contacto</h2>
+    <div class="social-links">
+      <a href="https://github.com/daniellopezmateos22" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/daniel-l%C3%B3pez-mateos-25198b223/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="CV_DANIELLOPEZMATEOS.pdf" target="_blank"><i class="fas fa-file-alt"></i> Ver CV</a>
+    </div>
+  </section>
+
   <footer>
     <p>Contacto: <a href="mailto:daniellopezmateos22@gmail.com">daniellopezmateos22@gmail.com</a></p>
   </footer>
+
+  <script>
+    // Tema claro/oscuro manual
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
 </body>
 </html>
